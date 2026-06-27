@@ -5,7 +5,7 @@ class d(b, c):
 
     def __init__(self, name, age, we):
         b.__init__(self, name, age)
-        c.__init__(self, name, we)
+        c.__init__(self, we)
 
     def mno(self):
         print("from d")

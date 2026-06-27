@@ -1,3 +1,6 @@
+# wrapping up of a data in single cell in encapsulation we majaroly use the private 
+# data member and acess it in the public member
+
 class Account:
     def __init__(self, bal):
         self.__bal = bal      # private variable
@@ -6,13 +9,13 @@ class Account:
         return self.__bal
 
     def set_bal(self, amt):
-        self.__bal = amt
+        self.__bal = amt # acessing the private variable in private method
         print("Balance updated")
 
-    def __private_method(self):
+    def __private_method(self): #private method
         print("Hello, I am private")
 
-    def acess_pm(self):
+    def acess_pm(self): # acessing the private variable in private method
         self.__private_method()
     
     def __withdraw(self):

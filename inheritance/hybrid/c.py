@@ -3,7 +3,7 @@ class c(a):
     def pqr(self):
         print("from c")
 
-    def __init__(self,name,we):
+    def __init__(self,we):
         self.we=we
         print("weight=",self.we)
-        a.__init__(self, name)   # instead of super()  
+      
